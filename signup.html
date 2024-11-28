@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: mian;
+            src: url("Roboto-Regular.ttf");
+        }
+        body{
+            background-image: url("pexels-padrinan-255379.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100vw;
+            height: 100vh;
+
+        }
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 10vh;
+            padding: 30px;
+            border: transparent;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            background: rgba(255, 255, 255, 0); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-family: mian;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .contact-form h2 {
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect */
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5bb7df;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        button:hover {
+            background-color: #5bb7df;
+            opacity: 1;
+        }
+        #button2 {
+            width: 100%;
+            padding: 10px;
+            background-color: #5bb7df;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        
+        #button2:hover {
+            background-color: #5bb7df;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Sign Up</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date Of Birth:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="verify">Verfiication Code:</label>
+                <input type="number" id="verify" name="verify" maxlength="6" required placeholder="Enter Your Six Digit Verification Code">
+            </div>
+            <button type="submit" formaction="login.html">Signup</button><br><br>
+            <label class="form-group">Already Have Account?</label><br><br>
+            <button type="submit" id="button2" style="z-index: 3;">Log In</button>
+</form>
+</div>
+</body>
+</html>

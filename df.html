@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: mian;
+            src: url(Roboto-Regular.ttf);
+        }
+        @font-face {
+            font-family: heading;
+            src: url(Montserrat-Bold.ttf);
+        }
+        * {
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body {
+            width: 100%; height: 1000%;
+            background-image: url("wallpaperflare.com_wallpaper\ \(3\).jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        nav {
+           background-color: #59045F;
+            overflow: hidden;
+            position: sticky;
+            padding: 20px 0px;
+            animation-name: nav;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+
+        }
+        @keyframes nav {
+            from {
+                    background-color: #c01595;
+            }
+            to {
+                    background-color: #59045F;
+            }
+        }
+        li {
+            float: left;
+            list-style: none;
+            margin: 10px 20px;
+            border-radius: 10px;
+            padding: 23px;
+            font-size: large;
+            background-color: #c01595;
+            text-decoration: none;
+            /*transition-property: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;*/
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .right {
+            float: right;
+        }
+        #kms {
+            font-size: 100px;
+            font-weight: bolder;
+            font-family: heading;
+            text-align: center;
+            margin-top: 60px;
+            color: #A109A5;
+        }
+        #kms{
+            animation-name: kms;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+        }
+        @keyframes kms {
+            from {
+                transform: translateY(-300px);
+            }
+            to {
+                transform: translateY(0px);
+            }
+        }
+        blockquote {
+            text-align: center;
+            animation-name: blockquote;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            color: white;
+        }
+        @keyframes blockquote {
+            from {
+                transform: translateX(300px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        .about {
+            font-family: mian;
+            text-align: left right;
+            padding: 10px 20px;
+            margin-top: 30px;
+            color: black;
+            font-size: large;
+            background-color: #7903A7;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: larger;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-weight: bolder;
+            font-family: heading;
+            text-align: center;
+            margin-bottom: 3px;
+        }
+        h2,label {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        #submit {
+            padding: 6px;
+            background-color: red;
+            margin-bottom: 3px;
+            border-radius: 3px;
+        }
+        li:hover {
+            background-color: #3A0179;
+            color: white;
+            transform: scale(1.3);
+        }
+        @keyframes navbar {
+            from {
+                transform: translateY(300px);
+            }
+            to {
+                transform: translateY(0px);
+            }
+        }
+        .navbar{
+            animation-name: navbar;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+        }
+        @keyframes right {
+            from {
+                transform: translateY(-300px);
+            }
+            to {
+                transform: translateY(0px);
+            }
+        }
+        .right{
+            animation-name: right;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+        }
+        @keyframes a {
+            from {
+                transform: translateX(-300px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        #a {
+            animation-name: a;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            background-image: url("view-three-dimensional-car-with-neon-lights\ \(1\).jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        @keyframes a1 {
+            from {
+                transform: translateX(-300px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        #a1{
+            animation-name: a1;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            background-image: url("view-3d-car-model\ \(1\).jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 120vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        @keyframes b {
+            from {
+                transform: translateX(300px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        #b{
+            animation-name: b;
+            animation-duration: 2s;
+            animation-delay: 0.3s;
+            background-image: url("view-3d-car-model.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .first {
+            font-size: 50px;
+            font-weight: bolder;
+            font-family: heading;
+            display: inline;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 30px;
+            border: transparent;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            background: rgba(255, 255, 255, 0); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            font-family: mian;
+        }
+        
+        .contact-form h2 {
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#a"><li class="navbar">Home</li></a>
+        <a href="#b"><li class="navbar">About</li></a>
+        <a href="#a1"><li class="navbar">Project</li></a>
+        <a href="#helloform"><li class="navbar">Contact</li></a>
+        <a href="login.html"><li class="right">Log In</li></a>
+        <a href="signup.html"><li class="right">Sign Up</li></a>
+    </nav>
+    <h1 id="kms">KMS</h1>
+    <blockquote>The Luxurious Car Brand</blockquote>
+    <div class="about" id="a">
+        <h1>Home</h1>
+        <p><sub class="first">E</sub>xperience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.Experience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.Experience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.</p>
+    </div>
+    <div class="about" id="b">
+        <h1>About</h1>
+        <p><sub class="first">T</sub>he pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.Experience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.</p>
+    </div>
+    <div class="about" id="a1">
+        <h1>Project</h1>
+        <h2>Rapid Typing Ultimate Project.</h2>
+        <p><sub class="first">P</sub>innacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars;<a href="D:\HTML Random\RapidTyping 5" style="color: burlywood;">Rapid Typing</a> they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.Experience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.</p><br><br>
+            <h2>Ashampoo WinOpt Project.</h2>
+            <p><sub class="first">O</sub>ur vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury,<a href="D:\HTML Random\WO27.lnk" style="color: burlywood;">WO27</a>  with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.Experience the pinnacle of automotive excellence with KMS, where opulence meets innovation. Our vehicles are not just cars; they are masterpieces of engineering and design, meticulously crafted to deliver an unparalleled driving experience. From the moment you step inside, you’ll be enveloped in a world of refined luxury, with sumptuous interiors and cutting-edge technology that set new standards for comfort and performance. At KMS, we don’t just build cars; we create timeless icons that redefine what it means to travel in style. Discover the art of driving reimagined—where every journey becomes an extraordinary experience.</p>
+    </div>
+    <div class="contact-form" id="helloform">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required style="background: rgba(255, 255, 255, 0); border: 1px solid black;">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="background: rgba(255, 255, 255, 0); border: 1px solid black;">
+            </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required style="background: rgba(255, 255, 255, 0); border: 1px solid black;"></textarea>
+            </div>
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">Are You Agree With Our Terms And Conditions.</label><br><br>
+            <button type="submit" class="forbutton">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
